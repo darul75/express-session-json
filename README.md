@@ -16,13 +16,13 @@ npm install express-session-json
 
 ```javascript
 var express = require('express'),
-    MongoJson = require('express-session-json');
+    JsonStore = require('express-session-json');
 
 var app = module.exports = express();
 
 app.configure(function(){    
     app.use(express.cookieParser('your secret here'));
-    app.use(express.session({ store: new MongoJson() }));
+    app.use(express.session({ store: new JsonStore() }));
     ...
 });
 ```
