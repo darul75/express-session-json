@@ -8,8 +8,7 @@ var express = require('express'),
 
 var app = module.exports = express();
 
-app.configure(function(){
-    //app.use(xp.cookieDecoder());
+app.configure(function(){    
     app.use(express.cookieParser('your secret here'));
     app.use(express.session({ store: new MongoJson() }));
     app.use(app.router);
