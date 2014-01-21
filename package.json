@@ -1,0 +1,26 @@
+{
+  "name": "express-session-json",
+  "version": "0.0.1",
+  "description": "JSON Simple File Session Store for ExpressJS",
+  "author": {
+    "name": "Julien Valéry",
+    "email": "darul75@gmail.com"
+  },
+  "bugs": {
+    "url": "http://github.com/darul75/express-session-json/issues"
+  },
+  "engines": {
+    "node": ">=0.2.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "main": "./lib/express-session-json",
+  "dependencies": {
+    "express": ">=1.0.0rc4"    
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/darul75/express-session-json.git"
+  }
+}
