@@ -1,7 +1,14 @@
 {
   "name": "express-session-json",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "JSON File Session Store for ExpressJS",
+  "keywords": [
+    "connect",
+    "json",
+    "file",
+    "session",
+    "express"
+  ],
   "author": {
     "name": "Julien Valéry",
     "email": "darul75@gmail.com"
