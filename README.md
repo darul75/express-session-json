@@ -31,6 +31,10 @@ app.configure(function(){
 
 - **filename** : filename, default 'express-sessions.json'
 
+## Metrics
+
+[![NPM](https://nodei.co/npm/express-session-json.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/express-session-json/)
+
 ## License
 
 The MIT License (MIT)
