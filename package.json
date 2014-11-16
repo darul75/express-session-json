@@ -23,9 +23,7 @@
     "lib": "lib"
   },
   "main": "./lib/express-session-json",
-  "dependencies": {
-    "express": ">=1.0.0rc4"    
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "http://github.com/darul75/express-session-json.git"
