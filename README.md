@@ -30,6 +30,8 @@ app.configure(function(){
     ...
 });
 
+```
+
 Example for express >= 4:
 
 ```javascript
@@ -50,7 +52,7 @@ app.use(session({
 
 ...
 
-
+```
 
 
 ## Options
