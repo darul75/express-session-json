@@ -58,7 +58,7 @@ app.use(session({
 ## Options
 
 - **filename** : filename, default 'express-sessions.json'
-- **path** : directory where to save, default 'node_modules/express-session/json/'
+- **path** : directory where to save, default 'node_modules/express-session-json/'
 
 ## Metrics
 
