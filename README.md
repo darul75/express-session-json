@@ -14,9 +14,13 @@ npm install express-session-json
 
 ## Usage
 
+Due to express >= 4 changes, we now need to pass express-session to the function express-session-json exports in order to extend session.Store:
+
+Example for express < 4:
+
 ```javascript
 var express = require('express'),
-    JsonStore = require('express-session-json');
+    JsonStore = require('express-session-json')(express.session);
 
 var app = module.exports = express();
 
@@ -25,11 +29,36 @@ app.configure(function(){
     app.use(express.session({ store: new JsonStore() }));
     ...
 });
+
 ```
+
+Example for express >= 4:
+
+```javascript
+var express = require('express'),
+    cookieParser = require('cookie-parser'),
+    session = require('express-session') ,
+    JsonStore = require('express-session-json')(session);
+
+var app = module.exports = express();
+
+app.use(cookieParser('your secret here'));
+app.use(session({
+    secret: 'your secret here' ,
+    resave: false,
+    saveUninitialized: false,
+    store: new JsonStore()
+});
+
+...
+
+```
+
 
 ## Options
 
 - **filename** : filename, default 'express-sessions.json'
+- **path** : directory where to save, default 'node_modules/express-session-json/'
 
 ## Metrics
 
