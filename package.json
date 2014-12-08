@@ -1,6 +1,6 @@
 {
   "name": "express-session-json",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "JSON file session storage for ExpressJS",
   "keywords": [
     "connect",
